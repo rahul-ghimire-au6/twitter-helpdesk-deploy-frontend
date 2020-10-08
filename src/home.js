@@ -278,7 +278,7 @@ class Home extends Component {
                           </div>}
                             {/* start of the bottom input type */}
                             {/* start of input type text */}
-                            <div style={{display:'flex',marginLeft:'2em', position:'fixed',top:'40rem'}}>
+                            <div className='attach-reply-container'>
                               <div style={{marginTop:'2em'}}>
                             <img src={this.props.userData===undefined?'':this.props.userData.message.twitter_profilePic_mini} alt='profile' className='friend-info-img' />
                             </div>                       

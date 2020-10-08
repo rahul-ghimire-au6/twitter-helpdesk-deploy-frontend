@@ -198,6 +198,13 @@
   font-size: 1em;
 }
 /* end */
+.attach-reply-container{
+  display:flex;
+  margin-left:2em;
+  position:relative;
+  top:30rem;
+}
+
 .friend-detail {
   margin-top: 1em;
   border: 1px solid #d3d3d3;
