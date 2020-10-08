@@ -78,6 +78,7 @@
 }
 .home-friend-container-div{
   overflow-y: auto;
+  height: 38em;
 }
 .friend-info {
   border-radius: 0.5em;

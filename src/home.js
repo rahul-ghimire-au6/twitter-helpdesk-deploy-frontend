@@ -52,7 +52,7 @@ class Home extends Component {
         if(data.status === "success"){                  
           setTimeout(() => {
             this.props.fetch_user_tweets_from_database(this.props.userData.message.jwt_token)  
-          }, 3000)
+          }, 2000)
           return {'status':'success'}
         }
       }).catch(err=>console.log(err))
