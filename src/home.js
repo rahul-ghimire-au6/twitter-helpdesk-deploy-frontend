@@ -32,7 +32,8 @@ class Home extends Component {
     } = this.props;
     console.log(params.userId);  
     const data159 = async ()=>{
-      let data101 = await this.props.fetch_user_data(params.userId);  
+      let data101 = await this.props.fetch_user_data(params.userId);
+      console.log(data101)  
       // this.props.fetch_user_tweets_from_database(data101.message.jwt_token)
       this.fetchTweets()
     }
