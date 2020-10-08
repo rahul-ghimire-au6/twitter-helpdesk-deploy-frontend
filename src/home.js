@@ -49,8 +49,10 @@ class Home extends Component {
       })
       .then(res=>res.json())
       .then(data=>{
-        if(data.status === "success"){
-          this.props.fetch_user_tweets_from_database(this.props.userData.message.jwt_token)
+        if(data.status === "success"){                  
+          setTimeout(() => {
+            this.props.fetch_user_tweets_from_database(this.props.userData.message.jwt_token)  
+          }, 3000)
           return {'status':'success'}
         }
       }).catch(err=>console.log(err))
@@ -208,6 +210,7 @@ class Home extends Component {
           <div className="home-sub-main-container">
             {/* chat list */}
             <div className='home-friend-container'>
+              <div className='home-friend-container-div'>
               {/* box1 */}
               {/* <div className="friend-info"></div> */}
               {tweetlist}
@@ -218,6 +221,7 @@ class Home extends Component {
               {/* box3 */}
               {/* <div className="friend-info"></div> */}
               {/* end   */}
+              </div>
             </div>
             {/* end */}
             {/* chat div */}

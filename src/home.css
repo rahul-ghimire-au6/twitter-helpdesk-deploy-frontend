@@ -73,9 +73,11 @@
   justify-content: space-between;  
 }
 .home-friend-container{
-  overflow-y: auto;
   height: 30em;
   width: 100%;
+}
+.home-friend-container-div{
+  overflow-y: auto;
 }
 .friend-info {
   border-radius: 0.5em;
