@@ -41,7 +41,7 @@ class Home extends Component {
 
   fetchTweets=()=>{   
     if(this.props.userData!==undefined){
-      fetch('http://localhost:3000/fetch_user_tweets_from_twitter',{
+      fetch('https://twitter-159.herokuapp.com/fetch_user_tweets_from_twitter',{
         headers: {
           'Authorization':this.props.userData.message.jwt_token
         }
@@ -111,7 +111,7 @@ class Home extends Component {
         let json_replybody=JSON.stringify(replybody)
         // console.log(json_replybody)
         console.log(json_replybody)
-        fetch('http://localhost:3000/reply_to_tweets',{
+        fetch('https://twitter-159.herokuapp.com/reply_to_tweets',{
           method: 'POST',
           headers: {
             'Authorization':this.props.userData.message.jwt_token,
