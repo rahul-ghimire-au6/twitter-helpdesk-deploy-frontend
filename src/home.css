@@ -201,8 +201,8 @@
 .attach-reply-container{
   display:flex;
   margin-left:2em;
-  position:relative;
-  top:30rem;
+  position: absolute;
+  top:40rem;
 }
 
 .friend-detail {
