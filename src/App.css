@@ -15,3 +15,15 @@
   box-shadow: 0px 0px 2px 2px rgb(0,0,0,0.1);
   transition: 1s;
 }
+.twitter_img{
+  height: 100vh;
+}
+
+.twitter-heading-container{
+  position: fixed;
+  top: 50%;
+  left: 68%;
+  margin-top: -50px;
+  margin-left: -100px;
+
+}
