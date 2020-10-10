@@ -30,7 +30,7 @@ class Home extends Component {
     const {
       match: { params },
     } = this.props;
-    console.log(params.userId);  
+    // console.log(params.userId);  
     const data159 = async ()=>{
       let data101 = await this.props.fetch_user_data(params.userId);
       console.log(data101)  
