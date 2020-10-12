@@ -14,7 +14,8 @@ ReactDOM.render(
     <Provider store={store}>
     <BrowserRouter>
     <Switch>
-    <Route exact path='/' component={App} />    
+    <Route exact path='/' component={App} />
+    {/* <Route exact path='/home/:userId' component={Home} /> */}
     <Route exact path='/home/:userId' component={Home} />
     <Route exact path='/backup' component={Backup} />
     </Switch>

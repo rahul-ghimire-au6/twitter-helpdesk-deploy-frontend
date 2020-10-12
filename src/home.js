@@ -25,7 +25,7 @@ class Home extends Component {
       disabled:false,
       replies:{status:'',message:[]},
       replydata:[],
-      temp:''
+      temp:''      
     }
   }
 
@@ -38,7 +38,7 @@ class Home extends Component {
       await this.props.fetch_user_data(params.userId);     
       this.fetchTweets()
     }
-    data159()         
+    data159()    
   }
 
   fetchTweets=()=>{   
@@ -50,10 +50,8 @@ class Home extends Component {
       })
       .then(res=>res.json())
       .then(data=>{
-        if(data.status === "success"){                  
-          setTimeout(() => {
-            this.props.fetch_user_tweets_from_database(this.props.userData.message.jwt_token)  
-          }, 2000)
+        if(data.status === "success"){          
+         this.props.fetch_user_tweets_from_database(this.props.userData.message.jwt_token)
           return {'status':'success'}
         }
       }).catch(err=>console.log(err))
@@ -147,7 +145,7 @@ class Home extends Component {
           user_reply:this.state.user_reply,
           user_pic:this.props.userData.message.twitter_profilePic_mini
         }
-        let json_replybody=JSON.stringify(replybody)
+        let json_replybody=JSON.stringify(replybody)        
         fetch('https://twitter-159.herokuapp.com/reply_to_tweets',{
           method: 'POST',
           headers: {
@@ -442,8 +440,8 @@ const mapStateToProps = (state) => {
   return {
     userData: state.userData,
     userTweetsData:state.userTweetsData,
-    tweetsData:state.tweetsData
+    tweetsData:state.tweetsData,
   };
 };
 
-export default connect(mapStateToProps, { fetch_user_data,fetch_user_tweets_from_database })(Home);
+export default connect(mapStateToProps, { fetch_user_data,fetch_user_tweets_from_database})(Home);

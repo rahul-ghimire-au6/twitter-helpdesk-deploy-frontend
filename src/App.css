@@ -18,12 +18,3 @@
 .twitter_img{
   height: 100vh;
 }
-
-.twitter-heading-container{
-  position: fixed;
-  top: 50%;
-  left: 68%;
-  margin-top: -50px;
-  margin-left: -100px;
-
-}
