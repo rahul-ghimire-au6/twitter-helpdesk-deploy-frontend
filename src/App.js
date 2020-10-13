@@ -4,7 +4,7 @@ import twitter1 from './assests/img/a.jpg'
 export default class App extends Component {
   
   handleClick=(e)=>{
-    window.location.href='http://127.0.0.1:3000/twitter'
+    window.location.href='https://twitter-159.herokuapp.com/twitter'
     return null
   }
 
